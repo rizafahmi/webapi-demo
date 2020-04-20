@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Online Status Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="paper.min.css">
+    <!-- Place favicon.ico in the root directory -->
+
+    <style>
+     li {
+         margin-top: 10px;
+     }
+    </style>
+</head>
+<body>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">
+    You are using an <strong>outdated</strong> browser. Please
+    <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+    your experience.
+    </p>
+  <![endif]-->
+    <div class="container">
+        <h1>Simple Chat App</h1>
+        <div class="row flex-spaces">
+            <div class="alert alert-secondary">
+                Your connection back on! 🎉
+            </div>
+            <div class="alert alert-danger">
+                Something wrong with your connection 😢
+            </div>
+        </div>
+        <form>
+            <div class="chatlist" id="chatlist">
+                <ul>
+                    <li>12:06 Tantek: what does the datetime stamp
+                    represent?</li>
+                    <li>12:07 KevinMarks: in iRC, when it was
+                    said</li>
+                    <li>12:07 Tantek: is it a point in time
+                    *before* they started speaking?</li>
+                    <li>12:07 Tantek: or *after*?</li>
+                    <li>12:07 Tantek: or somewhere in the
+                    *middle*?</li>
+                    <li>12:07 KevinMarks: usually it is quantised
+                    to seconds</li>
+                    <li>12:07 KevinMarks: and it is time the msg
+                    was received</li>
+                    <li>12:07 Tantek: but the second they started
+                    typing or pressed return?</li>
+                    <li>12:08 KevinMarks: prssed return i
+                    think</li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col sm-8">
+                    <div class="form-group">
+                        <input autofocus="true" class="input-block"
+                        type="text" id="message" name="message"
+                        placeholder="Type your text here...">
+                    </div>
+                </div>
+                <div class="col sm-4">
+                    <button type="submit" class="btn-secondary">✉️
+                    send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
