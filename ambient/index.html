@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ambient Light Demo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="../paper.min.css">
+    <!-- Place favicon.ico in the root directory -->
+
+    <style>
+     .darklight {
+         background-color: #242E37;
+     }
+     .brightlight {
+         background-color: #C0E3D0;
+     }
+     img {
+         border: 0;
+     }
+     .container {
+         display: flex;
+         justify-content: center;
+     }
+     .img-flip {
+         transform: scaleX(-1);
+         -moz-transform: scaleX(-1);
+     }
+    </style>
+</head>
+<body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+      You are using an <strong>outdated</strong> browser. Please
+      <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+      your experience.
+      </p>
+    <![endif]-->
+    <div class="container"><img class="ghost" src=
+    "pixel-ghost-png-8.png" alt="ghost image"></div>
+    <script src="ambient.js"></script>
+</body>
+</html>
